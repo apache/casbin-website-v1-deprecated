@@ -48,5 +48,12 @@ jobs:
           crowdin_branch_name: master
           create_pull_request: false
 
-      - name: Deploy Website
-        run: cd website && yarn install && GIT_USER="${GH_NAME}" yarn run publish-gh-pages
+      - name: Build Website
+        run: cd website && yarn install && yarn build
+
+      - uses: peaceiris/actions-gh-pages@v3
+        if: github.event_name != 'pull_request'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./website/build/casbin.github.io
+          publish_branch: asf-site
