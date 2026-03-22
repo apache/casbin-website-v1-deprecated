@@ -1,5 +1,8 @@
-# [v1.casbin.org](https://v1.casbin.org/) [![Build Status](https://img.shields.io/github/workflow/status/casbin/casbin-website/Node.js%20CI)](https://github.com/casbin/casbin-website/actions) 
-The site configuration and documentation powering Casbin's website: https://v1.casbin.org
+# [v1.casbin.org](https://v1.casbin.org/)
+
+> **Deprecated:** This repository is archived and no longer maintained. The current Casbin documentation site is developed in **[apache/casbin-website](https://github.com/apache/casbin-website)** (see [casbin.apache.org](https://casbin.apache.org/)). Please open issues and pull requests there.
+
+The site configuration and documentation that historically powered Casbin’s v1 website: https://v1.casbin.org
 
 ## Getting started
 
